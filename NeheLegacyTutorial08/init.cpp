@@ -34,9 +34,11 @@ bool keys[KEY_COUNT];
 bool active = true;
 bool fullscreen = false;
 
+bool blend = false;
 bool light = false;
 bool l_press = false;
 bool f_press = false;
+bool b_press = false;
 
 GLfloat x_rot = 30.0f;
 GLfloat y_rot = 60.0f;
@@ -62,7 +64,7 @@ LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
 int init_gl_texture()
 {
-	image::tga_image texture01("textures/wood_box_128x128_24.tga");
+	image::tga_image texture01("textures/Glass.tga");
 	err_t err_code = texture01.load();
 
 	if (!err_code)
@@ -135,6 +137,9 @@ int init_gl(GLvoid)
 	glDepthFunc(GL_LEQUAL);
 
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+
+	glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE);
 
 	return TRUE;
 }
@@ -545,6 +550,26 @@ int WINAPI WinMain(HINSTANCE hInstance,
 			}
 
 			if (!keys['F']) f_press = false;
+
+			if (keys['B'] && !b_press)
+			{
+				b_press = true;
+				blend = !blend;
+
+				if (blend)
+				{
+					glEnable(GL_BLEND);
+					glDisable(GL_DEPTH_TEST);
+				}
+				else
+				{
+					glDisable(GL_BLEND);
+					glEnable(GL_DEPTH_TEST);
+				}
+			}
+
+			if (!keys['B']) b_press = false;
+
 
 			if (keys[VK_PRIOR]) z_depth -= 0.01f;	// PgUp
 			if (keys[VK_NEXT]) z_depth += 0.01f;	// PgDown

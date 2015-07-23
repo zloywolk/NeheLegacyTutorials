@@ -15,6 +15,8 @@ Lesson 05 - 3D Shape
 
 Lesson 06 - Texture mapping 
 
-Lesson 07 -  Texture Filters, Lighting & Keyboard Control
+Lesson 07 - Texture Filters, Lighting & Keyboard Control
+
+Lesson 08 - Blending
 
 TGA library included (RGB 24 bit)

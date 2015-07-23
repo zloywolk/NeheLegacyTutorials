@@ -14,7 +14,7 @@
     <ClCompile Include="init.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9D88E32B-A119-4522-B088-51172ED772E6}</ProjectGuid>
+    <ProjectGuid>{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>NeheLegacyTutorial02</RootNamespace>
   </PropertyGroup>

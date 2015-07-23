@@ -24,6 +24,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NeheLegacyTutorial06", "Neh
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NeheLegacyTutorial07", "NeheLegacyTutorial07\NeheLegacyTutorial07.vcxproj", "{9D88E32B-A119-4522-B088-51172ED772E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NeheLegacyTutorial08", "NeheLegacyTutorial08\NeheLegacyTutorial08.vcxproj", "{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -66,6 +68,10 @@ Global
 		{9D88E32B-A119-4522-B088-51172ED772E6}.Debug|Win32.Build.0 = Debug|Win32
 		{9D88E32B-A119-4522-B088-51172ED772E6}.Release|Win32.ActiveCfg = Release|Win32
 		{9D88E32B-A119-4522-B088-51172ED772E6}.Release|Win32.Build.0 = Release|Win32
+		{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}.Debug|Win32.Build.0 = Debug|Win32
+		{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}.Release|Win32.ActiveCfg = Release|Win32
+		{425762BA-B8D8-40AB-AF27-E4002BF2AAF7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
