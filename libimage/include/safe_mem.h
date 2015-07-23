@@ -5,8 +5,7 @@
 
 namespace mem
 {
-	template <typename T>
-	inline LIBIMAGE_API void safe_delete(T *object)
+	LIBIMAGE_API inline void safe_delete(void *object)
 	{
 		if (object != nullptr)
 			delete object;
@@ -14,8 +13,7 @@ namespace mem
 		object = nullptr;
 	}
 
-	template <typename T>
-	inline LIBIMAGE_API void safe_arr_delete(T object[])
+	LIBIMAGE_API inline void safe_delete_arr(void *object)
 	{
 		if (object != nullptr)
 			delete [] object;

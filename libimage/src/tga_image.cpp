@@ -51,7 +51,7 @@ err_t image::tga_image::get_raw_data()
 		memset(buff, 0, sizeof(char) *m_tga_header.id_length + 1);
 
 		read_bytes = fread(buff, 1, m_tga_header.id_length, pf);
-		mem::safe_arr_delete(buff);
+		mem::safe_delete_arr(buff);
 	}
 
 	m_width = m_tga_header.width;
@@ -76,7 +76,7 @@ err_t image::tga_image::get_raw_data()
 				m_RgbContent[i + (m_bpp / 8 - 1) - j] = m_pContent[i + j--];
 		}
 
-		mem::safe_arr_delete(m_pContent);
+		mem::safe_delete_arr(m_pContent);
 		m_pContent = m_RgbContent;
 	}
 
@@ -86,7 +86,7 @@ err_t image::tga_image::get_raw_data()
 
 image::tga_image::~tga_image()
 {
-	mem::safe_arr_delete(m_pContent);
+	mem::safe_delete_arr(m_pContent);
 }
 
 image::tga_image::tga_image(const std::string& str_path)

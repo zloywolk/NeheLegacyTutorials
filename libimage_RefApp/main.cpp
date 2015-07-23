@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "libimage.h"
-#include "tga_format.h"
+#include "tga_image.h"
 
 int main(int argc, char *argv[])
 {
