@@ -19,4 +19,6 @@ Lesson 07 - Texture Filters, Lighting & Keyboard Control
 
 Lesson 08 - Blending
 
+Lesson 09 - Twinkling Stars
+
 TGA library included (RGB 24 bit)
