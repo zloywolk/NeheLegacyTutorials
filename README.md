@@ -21,6 +21,8 @@ Lesson 08 - Blending
 
 Lesson 09 - Twinkling Stars
 
-Lesson 10  Loading And Moving Through A 3D World 
+Lesson 10 - Loading And Moving Through A 3D World 
+
+Lesson 11 - Loading And Moving Through A 3D World 
 
 TGA library included (RGB 24 bit)
