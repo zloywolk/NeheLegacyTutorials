@@ -23,6 +23,8 @@ Lesson 09 - Twinkling Stars
 
 Lesson 10 - Loading And Moving Through A 3D World 
 
-Lesson 11 - Loading And Moving Through A 3D World 
+Lesson 11 - OpenGL Flag Effect (Windows 8 Logo) 
+
+Lesson 12 - Display Lists
 
 TGA library included (RGB 24 bit)
