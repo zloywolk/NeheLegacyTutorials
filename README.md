@@ -27,4 +27,6 @@ Lesson 11 - OpenGL Flag Effect (Windows 8 Logo)
 
 Lesson 12 - Display Lists
 
+Lesson 13 - Bitmap Fonts
+
 TGA library included (RGB 24 bit)
